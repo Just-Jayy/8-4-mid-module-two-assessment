@@ -138,8 +138,7 @@ const getAllMoviesReleasedAtOrBeforeYear = (movies, year) => movies.filter((movi
  *  checkMinMetascores(movies, 90));
  *  //>  false
  */
-const checkMinMetascores = (movies, metascore) => metascore === movies.metascore;
-console.log(movies.every(checkMinMetascores));
+const checkMinMetascores = (movies, metascore) => movies.every((movie) => movie.metascore === metascore);
 
 /**
  * getRottenTomatoesScoreByMovie()
@@ -165,9 +164,7 @@ console.log(movies.every(checkMinMetascores));
       { "James and the Giant Peach": "91%" },
     ];
  */
- function getRottenTomatoesScoreByMovie(movies, ratings){
-
- }
+ function getRottenTomatoesScoreByMovie(movies, ratings){}
   
 
 // Do not change anything below this line.
